@@ -288,12 +288,12 @@ i{
 /* links */
 
 .links{
-    height: 160px;
+    height: 150px;
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: center;
     align-items: center;
-    background-color: lightcyan;
-    color: darkgreen;
+    background-color: #272727;
+    color: white;
     font-size: 1.7rem;
 }
 .link1{
@@ -305,11 +305,7 @@ i{
 
  .link2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* display: flex; */
-    justify-content: space-evenly;
+    display: flex;
     padding-left:9px;
-    background-color: grey;
-    border: 1px solid white;
-    border-radius: 15px;
 }
 
