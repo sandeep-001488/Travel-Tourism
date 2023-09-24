@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* NAVBAR */
+
+        *{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+.navbar{
+    /* position: fixed; */
+    top: 0; left: 0; right: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    
+}
+
+.logo{
+   font-size: 26px;
+   font-weight: bolder;
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   animation-name: example;
+   animation-duration: .6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.Logo{
+    height:37px;
+    width: 120px;
+    text-align: center;
+    padding: 6px;
+}
+
+@keyframes example{
+    0%{
+        font-size: 26px;
+    }
+    25%{
+        font-size:28px ;
+    }
+    50%{
+        font-size:30px ;
+    }
+    75%{
+        font-size: 32px;
+        }
+    100%{
+        font-size:34px ;
+    }
+}
+
+.logo span{
+    color:orange;
+}
+
+.navlink a {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 25px;
+}
+
+.navbar a:hover{
+     color: orange;
+}
+
+.navbar .icons{
+    font-size:22px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navbar i:hover{
+    color: orange;
+}
+
+.search-bar #search-button{
+    width:250px;
+    font-size: 14px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar label{
+    font-size: 18px;
+    margin-left: 3px;
+    color: #fff;
+}
+
+.search-bar label:hover{
+    color: orange;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+
+    <header>
+        <div class="navbar">
+            <div class="Logo">
+               <a href="" class="logo"> <span>T</span>ravel</a>
+            </div>
+            <div class="navlink">
+               <a href="index.html">Home</a>
+               <a href="booking.html">Book</a>
+               <a href="">packages</a>
+               <a href="gallery.html">Gallary</a>
+               <a href="aboutus">About us</a>
+            </div>
+            <div class="icons">
+               <!--- <i class="fas fa-search" id="search"></i> -->
+                <i class=" fas fa-user plus" id="login-icon"></i>
+        
+            </div>
+            <form action="" class="search-bar">
+                <input type="search" id="search-button" placeholder="search here">
+                <label for="seach-button" class="fas fa-search" ></label>
+            </form>             
+        </div>
+    </header>
+
+
+
+
+    <div class="container">
+        <form action="#" method="post">
+            <label for="from"> From : </label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="to"> To : </label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <label for="passengers">Number of Passengers:</label>
+            <select id="passengers" name="passengers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
