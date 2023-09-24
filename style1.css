@@ -375,6 +375,108 @@
     
 }
 
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+.navbar{
+    /* position: fixed; */
+    top: 0; left: 0; right: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    
+}
+
+.logo{
+   font-size: 26px;
+   font-weight: bolder;
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   animation-name: example;
+   animation-duration: .6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.Logo{
+    height:37px;
+    width: 120px;
+    text-align: center;
+    padding: 6px;
+}
+
+@keyframes example{
+    0%{
+        font-size: 26px;
+    }
+    25%{
+        font-size:28px ;
+    }
+    50%{
+        font-size:30px ;
+    }
+    75%{
+        font-size: 32px;
+        }
+    100%{
+        font-size:34px ;
+    }
+}
+
+.logo span{
+    color:orange;
+}
+
+.navlink a {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 25px;
+}
+
+.navbar a:hover{
+     color: orange;
+}
+
+.navbar .icons{
+    font-size:22px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navbar i:hover{
+    color: orange;
+}
+
+.search-bar #search-button{
+    width:250px;
+    font-size: 14px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar label{
+    font-size: 18px;
+    margin-left: 3px;
+    color: #fff;
+}
+
+.search-bar label:hover{
+    color: orange;
+}
+
     
 
 
