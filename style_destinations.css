@@ -1,0 +1,64 @@
+.image_box {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.image_box .img1{
+    box-shadow: 2px 2px 0px 0px #e0dfdf;
+    border: 1px solid rgb(238, 231, 231);
+}
+
+.image_box .img1 img{
+    height:210px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img1 #content h3{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    
+}
+.img1 #content h3 i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: orange;
+}
+
+.img1 #content p{
+    font-weight: bold;
+    display: inline;
+    padding-bottom: px;
+}
+
+.img1 #content #stars i{
+    color: orange;
+}
+
+.img1 #content .price span{
+    margin-left:15px;
+    margin-top: 20px;
+}
+
+.img1 #content .bookbutton{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.img1 #content .bookbutton button{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px;
+    
+}
+
+.img1 #content .bookbutton button:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
